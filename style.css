@@ -162,7 +162,7 @@ img {
 .associate-animation-container {
     overflow: hidden;
     position: relative;
-    height: 200px; 
+    height: 200px; /*pseudo element hiding problem occurs because of having not a height to container*/
 }
 
 .associate-animation-container::before, .associate-animation-container::after {
