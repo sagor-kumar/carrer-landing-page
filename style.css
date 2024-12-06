@@ -162,13 +162,13 @@ img {
 .associate-animation-container {
     overflow: hidden;
     position: relative;
-    height: 200px; /*pseudo element hiding problem occurs because of having not a height to container*/
+    height: 100px; /*pseudo element hiding problem occurs because of having not a height to container*/
 }
 
 .associate-animation-container::before, .associate-animation-container::after {
     content: "";
     width: 150px;
-    height: 50%;
+    height: 100%;
     position: absolute;
     background-color: red;
     z-index: 99;
