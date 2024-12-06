@@ -149,8 +149,6 @@ img {
     padding: 0 1.5rem;
     margin: 10rem auto 18rem auto;
     text-align: center;
-    overflow: hidden;
-
 }
 
 .associate-heading {
@@ -162,38 +160,32 @@ img {
 }
 
 .associate-animation-container {
-    position: relative; /* Required for pseudo-elements to align */
     overflow: hidden;
-    /* background-color: lightgray;  */
-    height: 200px; /* Example height */
+    position: relative;
+    height: 200px; 
 }
 
-.associate-animation-container::before,
-.associate-animation-container::after {
+.associate-animation-container::before, .associate-animation-container::after {
     content: "";
-    position: absolute;
-    width: 100px;
+    width: 150px;
     height: 50%;
+    position: absolute;
     background-color: red;
-    z-index: 99; /* Ensure visibility */
+    z-index: 99;
 }
-
 .associate-animation-container::before {
     left: 0;
     background: linear-gradient(to right, #FFFFFF, transparent)
 }
-
 .associate-animation-container::after {
-    top: 0;
     right: 0;
-    background: linear-gradient(to right, transparent, #FFFFFF)
+    top: 0;
+    background: linear-gradient(to left, #FFFFFF, transparent)
 }
-
 
 .associate-animation {
     display: flex;
     gap: 670px;
-    /* margin: auto; */
     animation-name: infinite-scroll;
     animation-duration: 20s;
     animation-iteration-count: infinite;
