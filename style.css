@@ -84,6 +84,11 @@ img {
     line-height: 2.8rem;
 }
 
+.link:hover {
+    color: #3936C4;
+    font-weight: 600;
+}
+
 .header-btn {
     display: inline-block;
     font-weight: 600;
